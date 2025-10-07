@@ -4,7 +4,7 @@ import { useState } from "react";
 function App() {
   const [notes, setNotes] = useState([]);
 
-  const baseUrl ="https://https://horus-notes-app-api.vercel.app";
+  const baseUrl ="https://horus-notes-app-api.vercel.app";
 
   const fetchNotes = async () => {
     try {
