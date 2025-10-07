@@ -60,7 +60,7 @@ function App() {
 
   const handleupdateNote = async (id, updateTitle, updateContent) => {
     try {
-      const res = await fetch(`http://localhost:3000/notes/${id}`, {
+      const res = await fetch(`${baseUrl}/notes/${id}`, {
         method: "PUT",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ title: updateTitle, content: updateContent }),
